@@ -3,7 +3,6 @@ package com.accenture.Correo_excel_Serenity.features.search;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.questions.page.TheWebPage;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Before;
@@ -13,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import com.accenture.Correo_excel_Serenity.tasks.OpenTheApplication;
 import com.accenture.Correo_excel_Serenity.tasks.Redact;
 import com.accenture.Correo_excel_Serenity.tasks.Send;
+import com.accenture.Correo_excel_Serenity.tasks.Sent;
 import com.accenture.Correo_excel_Serenity.tasks.Subject;
 import com.accenture.Correo_excel_Serenity.tasks.To;
 import com.accenture.Correo_excel_Serenity.tasks.LoginAccount;
@@ -58,12 +58,13 @@ public class SearchByKeywordStory {
 		        when(anna).attemptsTo(To.to(correo));
 		        when(anna).attemptsTo(Subject.subject("Prueba"));
 		        when(anna).attemptsTo(Message.message("Prueba automatizada utilizando Serenity Screenplay y Selenimu"));		        
-		        when(anna).attemptsTo(Send.send());
-		        
-		        Thread.sleep(2000);
+		        when(anna).attemptsTo(Send.send());		        
+		        Thread.sleep(2000);		        
 		        
 				}
-			//when(anna).attemptsTo(Sent.sent());
+			when(anna).attemptsTo(Sent.sent());
+	        Thread.sleep(5000);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
