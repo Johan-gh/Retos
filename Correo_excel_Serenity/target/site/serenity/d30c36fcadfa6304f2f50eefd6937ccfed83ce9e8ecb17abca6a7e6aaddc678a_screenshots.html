@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity Screenplay and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="7b98ab63a1f66587e18b1d9e9de56423ebc1935e2b0df5669f2965b1b61d2c47.html">Search By Keyword Story</a></span>
+                > <span class="truncate-60"><a
+                    href="d30c36fcadfa6304f2f50eefd6937ccfed83ce9e8ecb17abca6a7e6aaddc678a.html">Search results should show the search term in the title </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-07-2018 13:18</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search By Keyword Story </span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="b73ab2df35cd94b5317e6d6bfdb3d2310ff26862ef2f19989342051d05f64b83.html">Search
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Search results should show the search term in the title
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f5d802f11183e4c2f1aaec87e166215bfb14c718ba89860ab39b3e68d6136c04.png" title="Open the application" width="960"/>
+                <img src="e275e28efb0a72582fd492ec8a50db68aa23d8d0156a13e3701695e29895c0c0.png" title="Anna opens the Gmail page" width="960"/>
+                <img src="947b8824ea7d58f7fc39292689088bb460289360768111ac5086ddf297db6e45.png" title="Account" width="960"/>
+                <img src="scaled_164a5e304dda39fd7ccce1a9f7bf1ddb61ff9765ceb4f7c6e2158b6a00d575d6.png" title="Account" width="960"/>
+                <img src="a5f2284b3c36fcc3146ee9e083320425fcc7b5bc38a8e1db50ed948cf78b9363.png" title="Anna enters 'johan1035.gh@gmail.com' into account field" width="960"/>
+                <img src="scaled_214af153dd1a0de333d82d4e34e763736b54587627ce52c43f545aa93facacba.png" title="Anna enters 'johan1035.gh@gmail.com' into account field" width="960"/>
+                <img src="357e17c9c0b0e08c154a91186a967552000755c81f78e70060a85375034c8a37.png" title="Login pass" width="960"/>
+                <img src="scaled_399203d92e0e30fcaea3c7690517501ab8df656c04d36262dc3100a7c3386285.png" title="Login pass" width="960"/>
+                <img src="da058b4535e273f406ccfdd0b72197cd8e57f15d0a0c3a3a8ef28c8cb3c96f37.png" title="Anna enters 'Johan1402@' into password field" width="960"/>
+                <img src="scaled_b1b75529f15af68c62557b8cf0ffa582e016a9f1e86a8c559194d570ea27749c.png" title="Anna enters 'Johan1402@' into password field" width="960"/>
+                <img src="scaled_4f4381a1507861499b87c8a3f04ffac1ab1e948fc5645a11e3b467c65451a051.png" title="Redact" width="960"/>
+                <img src="scaled_1a9bb15fb5ca537def1b47b2a409bf60c7985447876882d02dc83054645f19e6.png" title="Redact" width="960"/>
+                <img src="4f4381a1507861499b87c8a3f04ffac1ab1e948fc5645a11e3b467c65451a051.png" title="Anna clicks on redact" width="960"/>
+                <img src="scaled_30114872aeade746b0f0e89f69e2b4060e99c6e678be1b19b7d27071cff853d4.png" title="Anna clicks on redact" width="960"/>
+                <img src="30114872aeade746b0f0e89f69e2b4060e99c6e678be1b19b7d27071cff853d4.png" title="To" width="960"/>
+                <img src="scaled_e3fba4c8f418b7c477f49fce8a80807e71823d85070b38fb8e890a65b2147ee8.png" title="To" width="960"/>
+                <img src="scaled_579c13190a0d0f76069573ca7c7cce7e2e012315888392cf944ae6be1ff66472.png" title="Anna enters 'johan.rojas@accenture.com' into To field" width="960"/>
+                <img src="579c13190a0d0f76069573ca7c7cce7e2e012315888392cf944ae6be1ff66472.png" title="Subject" width="960"/>
+                <img src="scaled_63762272cb81ba57d20fbbc21ff893b5b374ff5bd1054ba74d3f3ae3164ac950.png" title="Subject" width="960"/>
+                <img src="63762272cb81ba57d20fbbc21ff893b5b374ff5bd1054ba74d3f3ae3164ac950.png" title="Anna enters 'Prueba' into Subject field" width="960"/>
+                <img src="scaled_d915e61adc5840cc24d8bda5ecbab9c9c26914931ecbe6411ab4b559718f4d57.png" title="Message" width="960"/>
+                <img src="scaled_547a2ffa533b81790fe4edb11037d48c2dbb15dff09aa792afe9e240bc759061.png" title="Message" width="960"/>
+                <img src="scaled_07f5e364c9b71ddc2c8065895534d4eda90a5c237133055064c6f201693725c3.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="scaled_070e12ffe3e5962a6864d2546bf49fb2431316af39b6534923a41afa486ccae7.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="070e12ffe3e5962a6864d2546bf49fb2431316af39b6534923a41afa486ccae7.png" title="Send" width="960"/>
+                <img src="scaled_4413eb4b1b27f9120058b8507bee1865229c221338180b5e81c0490bf1f04e86.png" title="Send" width="960"/>
+                <img src="4413eb4b1b27f9120058b8507bee1865229c221338180b5e81c0490bf1f04e86.png" title="Anna clicks on Send" width="960"/>
+                <img src="scaled_4fc996e6be61495e11ea6039a77ee6621f76a0498c851c4693f39929081728ce.png" title="Redact" width="960"/>
+                <img src="30114872aeade746b0f0e89f69e2b4060e99c6e678be1b19b7d27071cff853d4.png" title="Redact" width="960"/>
+                <img src="4fc996e6be61495e11ea6039a77ee6621f76a0498c851c4693f39929081728ce.png" title="Anna clicks on redact" width="960"/>
+                <img src="1a9bb15fb5ca537def1b47b2a409bf60c7985447876882d02dc83054645f19e6.png" title="Anna clicks on redact" width="960"/>
+                <img src="1a9bb15fb5ca537def1b47b2a409bf60c7985447876882d02dc83054645f19e6.png" title="To" width="960"/>
+                <img src="scaled_70da8d2e9c0790b6a751fce114fe0da1bb0a8c164928ddf3fd26b3c2ad9f1f4f.png" title="To" width="960"/>
+                <img src="scaled_998373803b3a10407014bbc0d2ba605ce3b99cfd5c32fb11ae619fb72898cb8a.png" title="Anna enters 'johan1035.gh@gmail.com' into To field" width="960"/>
+                <img src="998373803b3a10407014bbc0d2ba605ce3b99cfd5c32fb11ae619fb72898cb8a.png" title="Subject" width="960"/>
+                <img src="scaled_427d19f4154f4dde995f64b5786ef4216fd376c3e5547048586dd269931ba356.png" title="Subject" width="960"/>
+                <img src="scaled_68f0924e8706292b57111a63730deae826ae3af7916586497df3fc69cba8ea97.png" title="Anna enters 'Prueba' into Subject field" width="960"/>
+                <img src="scaled_882c5d1e3d8ef53b94b3a22ee579dac6a43248dd10b36f9cb31ac93b17f3e1c3.png" title="Message" width="960"/>
+                <img src="scaled_64fbb73947e44da972fcc0c98b541481f2467c7ce5e56530aa1d1452c0c24118.png" title="Message" width="960"/>
+                <img src="scaled_ac7e695154aca1fa2a989a65c48258e17122f3441fb29946dd0540551d236d8e.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="scaled_bae5a24b86b27f5f02726f4f5daa5eb6553fda01d17f03648dd2a825a6dd4074.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="bae5a24b86b27f5f02726f4f5daa5eb6553fda01d17f03648dd2a825a6dd4074.png" title="Send" width="960"/>
+                <img src="scaled_7f0aa3f400e76b04784736c03355b36c1bacc934640d990ee275f337815554c4.png" title="Send" width="960"/>
+                <img src="7f0aa3f400e76b04784736c03355b36c1bacc934640d990ee275f337815554c4.png" title="Anna clicks on Send" width="960"/>
+                <img src="scaled_fa71828be669a90072017a7617a9c7da71af42bfde522749bf7a04802fa90fa7.png" title="Redact" width="960"/>
+                <img src="scaled_806e4c039509629a150cb7872e71cf187385704749b3460ecce6a55d1325a3d2.png" title="Redact" width="960"/>
+                <img src="fa71828be669a90072017a7617a9c7da71af42bfde522749bf7a04802fa90fa7.png" title="Anna clicks on redact" width="960"/>
+                <img src="scaled_94c6c19ae6087c9abe1e96da3b29b5aaa2585da097fdd2e8e808bd202da090a2.png" title="Anna clicks on redact" width="960"/>
+                <img src="94c6c19ae6087c9abe1e96da3b29b5aaa2585da097fdd2e8e808bd202da090a2.png" title="To" width="960"/>
+                <img src="scaled_62c554640492796829bd22e42c37750e917f28c11e5ed1e84517680e6f538b64.png" title="To" width="960"/>
+                <img src="scaled_20c2b4ea35b133823d2bd503670276223b2753814d06999080c8cc60da6334e8.png" title="Anna enters 'johan.gh@hotmail.com' into To field" width="960"/>
+                <img src="20c2b4ea35b133823d2bd503670276223b2753814d06999080c8cc60da6334e8.png" title="Subject" width="960"/>
+                <img src="scaled_c5c69051ac8ec9d5fdb03af84da0aba41a219c1c7249bb6e8810d27635819f6f.png" title="Subject" width="960"/>
+                <img src="scaled_5aac1d6eb64bd6c49f44c3810b588fb5c1eca28a7397b5cb1fce37e97eeb3d64.png" title="Anna enters 'Prueba' into Subject field" width="960"/>
+                <img src="scaled_b2e5858bb27f913ee91ce4ab4c13c5d3b7f8c01097099a0ad4b07f79645b4867.png" title="Message" width="960"/>
+                <img src="scaled_5886fa29c7e13d51e54e4f00b47b17ce689058325646db0a9ef4fc60d5414a6e.png" title="Message" width="960"/>
+                <img src="scaled_efbd22d1860baa256d9378f98f691bd3b257737e0bd99c50b0f316995472cfe5.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="scaled_962fc50e843502ffb12677dc73d69a0e77de76abf75a6080604a8b763fa9d5fc.png" title="Anna enters 'Prueba automatizada utilizando Serenity Screenplay y Selenimu' into Message field" width="960"/>
+                <img src="962fc50e843502ffb12677dc73d69a0e77de76abf75a6080604a8b763fa9d5fc.png" title="Send" width="960"/>
+                <img src="scaled_6456bf5550d896e987b2d428e4bdc7dd1089966dfec6ed2dbd9cc7edc57737e8.png" title="Send" width="960"/>
+                <img src="scaled_75c8176b5027b6f76b471b2b1d541812aece45fabeb5d877b54c5c45c04f18d5.png" title="Anna clicks on Send: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>
