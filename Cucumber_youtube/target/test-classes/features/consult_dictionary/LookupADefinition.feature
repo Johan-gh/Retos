@@ -3,9 +3,9 @@ Feature: Lookup a definition
   As an English student
   I want to look up word definitions
 
-  Scenario: Looking up the definition of 'apple'
+  Scenario: Looking up the definition of 'car'
     Given the user is on the Wikionary home page
-    When the user looks up the definition of the word 'apple'
+    When the user looks up the definition of the word 'car'
     Then they should see the definition 'A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.'
 
   Scenario: Looking up the definition of 'pear'
