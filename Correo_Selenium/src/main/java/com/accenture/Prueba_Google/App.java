@@ -1,4 +1,4 @@
-package com.accenture.Prueba_Google;
+﻿package com.accenture.Prueba_Google;
 
 import java.util.concurrent.TimeUnit;
 
@@ -48,16 +48,16 @@ public class App
         
         //correo
         correo = driver.findElement(By.xpath("//*[@id=\"identifierId\"]"));
-        correo.sendKeys("johan1035.gh@gmail.com \n");
+        correo.sendKeys("aquie el correo  \n");
         //password
         password = driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input"));
-        password.sendKeys("Johan1402@ \n");
+        password.sendKeys("aqui la clave \n");
         //click en redactar
         redactar = driver.findElement(By.xpath("//*[@role='button' and text()='Redactar']"));
         redactar.click();
         //para
         para = driver.findElement(By.xpath("//textarea[@name='to']"));
-        para.sendKeys("ingeniero.santiago@outlook.com");
+        para.sendKeys("correo destino");
         //asunto
         asunto = driver.findElement(By.xpath("//input[@name='subjectbox']"));
         asunto.sendKeys("Prueba automatizada");
