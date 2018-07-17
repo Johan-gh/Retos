@@ -44,7 +44,7 @@ public class SearchByKeywordStory {
     	
         givenThat(anna).wasAbleTo(openTheApplication);
         herBrowser.manage().window().maximize();
-        when(anna).attemptsTo(Login.login("email@email.com","password"));
+        when(anna).attemptsTo(Login.login("email","pass"));
         
 		try {
 			readexcel re = new readexcel();

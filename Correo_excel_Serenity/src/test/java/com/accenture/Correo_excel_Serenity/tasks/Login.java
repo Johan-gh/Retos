@@ -3,8 +3,7 @@ package com.accenture.Correo_excel_Serenity.tasks;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static org.openqa.selenium.Keys.ENTER;
 
-import com.accenture.Correo_excel_Serenity.ui.AccountField;
-import com.accenture.Correo_excel_Serenity.ui.PasswordField;
+import com.accenture.Correo_excel_Serenity.ui.LoginField;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -23,12 +22,11 @@ public class Login implements Task{
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(
 				Enter.theValue(loginaccount)
-                .into(AccountField.Account_Field)
+                .into(LoginField.Account_Field)
                 .thenHit(ENTER),
                 Enter.theValue(loginpassword)
-                .into(PasswordField.Password_Field)
-                .thenHit(ENTER)
-				
+                .into(LoginField.Password_Field)
+                .thenHit(ENTER)				
 				);		
 	}
 	
