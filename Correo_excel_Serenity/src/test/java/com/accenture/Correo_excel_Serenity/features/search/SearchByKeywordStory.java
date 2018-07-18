@@ -54,12 +54,12 @@ public class SearchByKeywordStory {
 				
 				when(anna).attemptsTo(SendEmail.sendemail(correo, "Prueba", "Prueba automatizada utilizando Serenity Screenplay y Selenimu"));
 	        
-		        Thread.sleep(2000);		        
+		        Thread.sleep(1000);		        
 		        
 				}
 			when(anna).attemptsTo(Sent.sent());
 			then(anna).should(eventually(seeThat(TheWebPage.title(), containsString("Enviados"))));
-	        Thread.sleep(5000);
+	        Thread.sleep(3000);
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

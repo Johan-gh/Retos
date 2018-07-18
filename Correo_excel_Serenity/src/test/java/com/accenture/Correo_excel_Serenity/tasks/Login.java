@@ -13,10 +13,13 @@ public class Login implements Task{
 	private final String loginaccount;
 	private final String loginpassword;
 	
-	protected Login(String loginaccount,String loginpassword) {
-        this.loginaccount = loginaccount;
-        this.loginpassword = loginpassword;
-    }
+	
+
+	public Login(String loginaccount, String loginpassword) {
+		super();
+		this.loginaccount = loginaccount;
+		this.loginpassword = loginpassword;
+	}
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {

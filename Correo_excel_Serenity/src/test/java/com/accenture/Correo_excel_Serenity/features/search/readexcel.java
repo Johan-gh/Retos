@@ -8,21 +8,20 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Sheet;
-
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
 public class readexcel{
 	
 	FileInputStream agenda;
-	HSSFWorkbook wb;
+	XSSFWorkbook wb;
 	Sheet sheet;
 
 	public readexcel() throws IOException{
-		agenda = new FileInputStream(new File("C:\\Users\\johan.rojas\\eclipse-workspace\\correos_excel\\agenda.xls"));
-		wb = new HSSFWorkbook(agenda);			
+		agenda = new FileInputStream(new File("C:\\Users\\johan.rojas\\eclipse-workspace\\correos_excel\\agenda.xlsx"));
+		wb = new XSSFWorkbook(agenda);			
 		sheet = wb.getSheetAt(0);
 	}
 	
