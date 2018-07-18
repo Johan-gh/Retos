@@ -2,8 +2,8 @@ package com.accenture.Youtube_cucumber.steps;
 
 import net.thucydides.core.annotations.Steps;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 
 import com.accenture.Youtube_cucumber.steps.serenity.EndUserSteps;
 
@@ -13,30 +13,53 @@ public class DefinitionSteps {
     EndUserSteps anna;
 
     @Given("el usuario esta en la pagina de youtube")
-    public void givenTheUserIsOnTheWikionaryHomePage() {
-        anna.is_the_home_page();
+    public void el_usuario_esta_en_la_pagina_de_youtube() {
+        anna.YotubeHomePage();
     }
 
-    @When("busca el video '(.*)'")
-    public void whenTheUserLooksUpTheDefinitionOf(String word) {
-        anna.looks_for(word);
-    }
-    @When("reproducir")
-    public void voi() {
-		anna.abrir_video();
-	}
-    @When("compartir")
-    public void compartir() {
+    @When("busca y reproduce el video '(.*)'")
+    public void whenTheUserLooksUpTheDefinitionOf(String video) {
+        anna.Buscar_video(video);
+    }    
+    
+    @When("comparte y selecciona GooglePlus")
+    public void comparte_y_selecciona_GooglePlus() {		
     	anna.compartir();
-    }
-    @When("googleplus")
-    public void googlepus() {
-    	anna.googleplus();
-    }
+    	anna.CambiarGmail();
+	}
+    
+    @When("el usuario ingresa con el usuario '(.*)' y la clave '(.*)'")
+    public void login(String usuario,String clave) {		
+    	anna.login(usuario,clave);
+	}
+    @When("el usuario publica el video buscado con el mensaje '(.*)'")
+    public void el_usuario_publica_el_video_buscado_con_el_mensaje(String msg) {
+		anna.Post(msg);
 
-//    @Then("they should see the definition '(.*)'")
-//    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
-//        anna.should_see_definition(definition);
-//    }
+	}
+    @Given("el usuario esta en la pagina de googleplus")
+    public void el_usuario_esta_en_la_pagina_de_googleplus() {
+        anna.GooglePlusHomePage();
+    }
+    @When("el usuario ingresa con el usuario '(.*)' y la clave '(.*)' a googleplus")
+    public void loginGP(String user,String pass) {
+		anna.loginGP(user, pass);
+	}
+    @When("login '(.*)''(.*)'")
+    public void login2(String user,String pass) {
+		anna.loginGP(user, pass);
+
+	}
+    @When("inicio")
+    public void inicio() {
+    	anna.inicio();
+    	try {
+			Thread.sleep(5000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+    
+
 
 }

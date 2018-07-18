@@ -1,60 +1,66 @@
 package com.accenture.Youtube_cucumber.steps.serenity;
 
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebDriver;
+
+import com.accenture.Youtube_cucumber.pages.GmailPage;
+import com.accenture.Youtube_cucumber.pages.GooglePlusPage;
 import com.accenture.Youtube_cucumber.pages.YoutubePage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.steps.ScenarioSteps;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.hasItem;
 
 public class EndUserSteps {
 
-    YoutubePage youtubepage
-    ;
+    YoutubePage youtubepage;
+    GmailPage gmailpage;  
+    GooglePlusPage googlepluspage;
 
+    
     @Step
-    public void enters(String keyword) {
-        youtubepage.enter_keywords(keyword);
-        System.out.println("holaaaa");
-    }
-
-    @Step
-    public void starts_search() {
-        youtubepage.lookup_terms();
-    }
-
-//    @Step
-//    public void should_see_definition(String definition) {
-//        assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
-//    }
-
-    @Step
-    public void is_the_home_page() {
+    public void YotubeHomePage() {
         youtubepage.open();
+        WebDriver driver = youtubepage.getDriver();
+        driver.manage().window().maximize();
     }
-
+    
     @Step
-    public void looks_for(String term) {
-        enters(term);
-        starts_search();
-    }
-    @Step
-    public void abrir_video() {
-    	youtubepage.abrir_video();
-    	try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
+    public void Buscar_video(String video) {              
+        youtubepage.Buscar_video(video);
+    }    
+    
     @Step
     public void compartir() {
-    	youtubepage.compartir();
+    	youtubepage.compartir();        	
+    }    
+    @Step
+    public void CambiarGmail() {	
+    	WebDriver driver = youtubepage.getDriver();
+    	ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+    	driver.switchTo().window(tabs.get(1));
+	}
+    @Step
+    public void login(String usuario,String clave) {		
+    	gmailpage.login(usuario, clave);
+	}
+
+    @Step
+    public void Post(String msg) {
+    	gmailpage.Post(msg);
+	}   
+    
+    @Step
+    public void GooglePlusHomePage() {
+        googlepluspage.open();
+        WebDriver driver = youtubepage.getDriver();
+        driver.manage().window().maximize();
     }
     @Step
-    public void googleplus() {
-    	youtubepage.googleplus();
-    }
+	public void loginGP(String user, String pass) {		
+		googlepluspage.loginGP(user, pass);
+	}
+    @Step
+    public void inicio() {
+    	googlepluspage.home();
+	}
+    
 }
