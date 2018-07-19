@@ -10,8 +10,8 @@ Feature: buscar video
     
   Scenario: entrar a googleplus
     Given el usuario esta en la pagina de googleplus    
-    When  el usuario ingresa con el usuario 'johan1035.gh@gmail.com' y la clave 'Johan1402@' a googleplus
-    When login 'johan1035.gh@gmail.com''Johan1402@'
+    When  el usuario ingresa con el usuario 'email' y la clave 'pass' a googleplus
+    When login 'email''pass'
     When inicio
   
   
